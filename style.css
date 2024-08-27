@@ -1,0 +1,71 @@
+.weather-card {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 20px;
+  width: 300px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin: 20px auto;
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+.weather-card h3 {
+  margin-top: 0;
+  font-size: 24px;
+  color: #2196f3;
+}
+
+.weather-card p {
+  margin: 10px 0;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.weather-card .temperature {
+  font-size: 28px;
+  font-weight: bold;
+  color: #f44336;
+}
+
+.weather-card .windspeed,
+.weather-card .winddirection,
+.weather-card .weathercode {
+  font-size: 16px;
+  color: #666;
+}
+
+.weather-card .weather-icon {
+  margin: 15px 0;
+  width: 100px; 
+  height: 100px; 
+}
+
+.loader {
+  width: 80px;
+  height: 80px;
+  border: 7px solid #fff;
+  border-bottom-color: rgba(36, 157, 227, 0.992);
+  border-radius: 50%;
+  display: inline-block;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.loader-hide {
+  display: none;
+}
